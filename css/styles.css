@@ -195,7 +195,7 @@ body {
     background-size: cover;
 }
 
-.hero__title {
+.hero__heading {
     margin-bottom: 30px;
     padding: 0;
     font-size: 44px;
@@ -239,8 +239,17 @@ body {
 /*==END hero==*/
 
 /*======section-feature=====*/
-/*h3 our-features*/
-.features-list .title {
+
+/*h2 our-features спрятан*/
+.features__heading {
+    visibility: hidden;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px
+}
+
+.feature__title {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
@@ -249,22 +258,15 @@ body {
     color: var(--text-item);
 }
 
-/*h2 our-features спрятан*/
-.title-hidden {
-    visibility: hidden;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px
-}
-
-.features-list {
-    list-style-type: none;
+.features__ul {
     display: flex;
 }
 
+.feature__list:not(:last-child) {
+    margin-right: 30px
+}
 
-.feature-list-box::before {
+.feature__list::before {
     margin-bottom: 30px;
     display: block;
     content: "";
@@ -297,22 +299,18 @@ body {
     background-size: 70px, 70px;
 }
 
-.feature-list-box:not(:last-child) {
-    margin-right: 30px
-}
-
-.features-text {
+.features__paragraph {
     line-height: 1.71;
 }
 
 /*======end section-feature=====*/
 /*====section what do we do====*/
 /*h2 studia*/
-.no-top-padding {
+.section--padding {
     padding-top: 0;
 }
 
-.section-title-work {
+.our-work__heading {
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -321,21 +319,30 @@ body {
     color: var(--text-item);
 }
 
-.work-list {
+.our-work__ul {
     display: flex;
 }
 
-.work-img:not(:last-child) {
-    margin-right: 30px
-}
-
-.work-img {
+.our-work__item {
     position: relative;
     width: 370px;
     height: 294px;
 }
 
-.box-text {
+.our-work__item:not(:last-child) {
+    margin-right: 30px
+}
+
+.our-work__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    font-style: normal;
+    color: var(--background-color);
+}
+
+.our-work__title--position {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -345,15 +352,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.text-img {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    font-style: normal;
-    color: var(--background-color);
 }
 
 /* */
