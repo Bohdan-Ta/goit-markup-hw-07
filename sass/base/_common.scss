@@ -1,3 +1,11 @@
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    background: var(--background-color);
+    color: var(--primary-text-color);
+}
+
 h1,
 h2,
 h3,
@@ -32,18 +40,9 @@ img {
 .link {
     text-decoration: none;
     list-style: none;
-
 }
 
 .flex {
     display: flex;
     align-items: center;
-}
-
-body {
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    background: var(--background-color);
-    color: var(--primary-text-color);
 }

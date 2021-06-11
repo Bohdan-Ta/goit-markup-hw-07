@@ -1,14 +1,13 @@
 .portfolio__filter--indent {
-    margin-bottom: 50px;
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
-
 .portfolio__filter__item {
     list-style-type: none;
-    &:not(:last-child) {
-        margin-right: 8px;
-    }
+}
+.portfolio__filter__item:not(:last-child) {
+    margin-right: 8px;
 }
 
 .portfolio__filter__btn {

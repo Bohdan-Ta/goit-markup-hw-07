@@ -5,18 +5,18 @@
     line-height: 1.2;
     color: var(--second-color-link);
     text-decoration: none;
-    &_top {
-        display: inline;
-        margin-right: 93px;
-        &_black {
-            color: var(--half-logo);
-        }
+}
+.logo_top {
+    display: inline;
+    margin-right: 93px;
+    .logo_top_black {
+        color: var(--half-logo);
     }
-    &_footer {
-        display: inline-block;
-        margin-bottom: 20px;
-        &_white {
-            color: var(--background-color);
-        }
+}
+.logo_footer {
+    display: inline-block;
+    margin-bottom: 20px;
+    .logo_footer_white {
+        color: var(--background-color);
     }
 }
